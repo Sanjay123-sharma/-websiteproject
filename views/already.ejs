@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>First Tech Limited</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        /* Main section */
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .message {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .login-btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: auto;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+
+            header, footer {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        First Tech Limited
+    </header>
+
+    <!-- Main Message Section -->
+    <div class="container">
+        <div class="message">
+            User already registered, please go to the login page.
+        </div>
+        <button class="login-btn"><a href="login.ejs">login</a></button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 First Tech Limited. All rights reserved.
+    </footer>
+
+</body>
+</html>

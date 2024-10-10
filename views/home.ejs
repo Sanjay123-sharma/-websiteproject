@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>First Tech Limited</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            font-size: 24px;
+        }
+
+        .greeting {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 16px;
+            color: #fff;
+        }
+
+        /* Main section */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* Services Section */
+        .services {
+            margin-bottom: 40px;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .services-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service-item {
+            background-color: white;
+            padding: 20px;
+            width: 30%;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .service-item:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* About Us Section */
+        .about {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .about h2 {
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        /* Contact Us Section */
+        .contact {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .contact h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .service-item {
+                width: 45%;
+            }
+
+            .greeting {
+                position: static;
+                display: block;
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .service-item {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        First Tech Limited
+        <div class="greeting">
+            
+                <h6 >hello ,sir</h6>
+         <!-- This is where the username will go dynamically -->
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- Services Section -->
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Web Development</h3>
+                    <p>We build fast, responsive websites that drive business success.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Mobile App Development</h3>
+                    <p>Our mobile apps are designed to deliver the best user experience on all platforms.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Cloud Solutions</h3>
+                    <p>Leverage the power of cloud computing to scale your business.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about">
+            <h2>About Us</h2>
+            <p>
+                First Tech Limited is a leading technology solutions provider. We are dedicated to delivering
+                innovative software solutions, transforming businesses through technology.
+            </p>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p>Email: info@firsttechlimited.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Tech Avenue, Silicon Valley, CA</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 First Tech Limited. All rights reserved.
+    </footer>
+
+</body>
+</html>
