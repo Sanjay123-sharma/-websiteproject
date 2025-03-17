@@ -1,8 +1,11 @@
+// require mongoose module
 const mongoose=require("mongoose");
 
-mongoose.connect("mongodb://localhost:27017/website").then(()=>console.log("database connected")).catch((e)=>{console.log(e)});
+// built connection of node to mongo db
+mongoose.connect(process.env.MONGO_URL="mongodb://localhost:27017/website").then(()=>console.log("database connected")).catch((e)=>{console.log(e)});
 
 
+// create userSchema that defines logical structure of the database.
 const userSchema=mongoose.Schema({
 username:{
     type:String,
@@ -17,7 +20,7 @@ password:{
     required:true
 }
 
-})
+});
 
-
+// exports the whole module to main file
 module.exports=mongoose.model('user',userSchema);
