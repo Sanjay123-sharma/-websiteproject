@@ -146,7 +146,7 @@ const jwt = require("jsonwebtoken");
 const userModel = require("./model/user");
 const bcrypt = require("bcrypt");
 
-require("dotenv").config();
+
 
 // middleware 
 
